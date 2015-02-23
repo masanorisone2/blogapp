@@ -1,0 +1,19 @@
+2015-02-22 14:04:07 Error: [MissingControllerException] Controller class Index.htmlController could not be found.
+Exception Attributes: array (
+  'class' => 'Index.htmlController',
+  'plugin' => NULL,
+)
+Request URL: /index.html
+Stack Trace:
+#0 /var/www/application/current/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-23 07:42:22 Error: Fatal Error (4): syntax error, unexpected '=', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in [/var/www/application/current/app/Config/database.php, line 71]
+2015-02-23 07:42:22 Error: [FatalErrorException] syntax error, unexpected '=', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+Request URL: /
+Stack Trace:
+#0 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/applic...', 71)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/applic...', 71, Array)
+#2 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/applic...', 71, Array)
+#3 /var/www/application/current/app/Vendor/cakephp/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
