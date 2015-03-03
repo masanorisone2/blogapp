@@ -14,7 +14,12 @@ class PostsController extends AppController {
   ];
 
   public function index(){
-    $this->set('posts', $this->Paginator->paginate());
+    //$this->set('posts', $this->Paginator->paginate());
+	$this->Paginator->settings = [
+		'limit' => 5,
+		'order' => ['Post.id' => 'desc'],
+	];
+	$this->set('posts', $this->Paginator->paginate());
   }
 
   public function add(){
