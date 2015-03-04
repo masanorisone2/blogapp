@@ -1,6 +1,6 @@
 <?php
 CakePlugin::load('Environments');
-App:uses('Environment', 'Environments.lib');
+App::uses('Environment', 'Environments.lib');
 
 Environment::configure('development', true, [
   'MYSQL_DB_HOST' => 'localhost',
