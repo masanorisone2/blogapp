@@ -9,9 +9,9 @@ switch ($env) {
     include dirname(__FILE__) . DS . 'environments' . DS . 'production.php';
     break;
   default:
-    //include dirname(__FILE__) . DS . 'environments' . DS . 'development.php';
-    //include dirname(__FILE__) . DS . 'environments' . DS . 'test.php';
-    //include dirname(__FILE__) . DS . 'environments' . DS . 'ci.php';
+    include dirname(__FILE__) . DS . 'environments' . DS . 'development.php';
+    include dirname(__FILE__) . DS . 'environments' . DS . 'test.php';
+    include dirname(__FILE__) . DS . 'environments' . DS . 'ci.php';
     break;
 }
 
