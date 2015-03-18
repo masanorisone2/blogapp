@@ -1,6 +1,6 @@
 <?php
 CakePlugin::load('Environments');
-App::uses('Environment', 'Environments.lib');
+App::uses('Environment', 'Environments.Lib');
 
 $env = env('CAKE_ENV');
 
